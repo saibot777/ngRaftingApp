@@ -16,6 +16,7 @@
     <!--Custom Css-->
     <link href="app/app.css" rel="stylesheet" />
     <link href="ext-modules/psFramework/psFramework.css" rel="stylesheet" />
+    <link href="ext-modules/psMenu/psMenu.css" rel="stylesheet" />
     <!--End-->
 
     <!--Javascript Libraries-->
@@ -37,8 +38,14 @@
 
     <script src="app/appModule.js"></script>
     <!--End-->
+
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
 </head>
-<body class="container-fluid">
+<body class="container-fluid" ng-cloak>
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
@@ -47,9 +54,9 @@
                   subtitle="Administrative Application"
                   icon-file="images/kayak-icon-flat.png">
         <ps-menu>
-            <ps-menu-item label="Dashboard"></ps-menu-item>
-            <ps-menu-item label="Locations"></ps-menu-item>
-            <ps-menu-item label="Raft Guides"></ps-menu-item>
+            <ps-menu-item icon="fa-dashboard" label="Dashboard"></ps-menu-item>
+            <ps-menu-item icon="fa-location-arrow" label="Locations"></ps-menu-item>
+            <ps-menu-item icon="fa-user" label="Raft Guides"></ps-menu-item>
         </ps-menu>
 
     </ps-framework>
