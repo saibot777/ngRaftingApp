@@ -1,5 +1,4 @@
-﻿
-.ps-title-bar {
+﻿.ps-title-bar {
     background-color: white;
     padding: 0 20px;
     border-bottom: 2px solid black;
@@ -7,6 +6,10 @@
 
 .ps-title-area {
     display: inline-block;
+    text-align: center;
+}
+.ps-logo-area {
+    text-align: center;
 }
 
 .ps-icon {
@@ -28,8 +31,20 @@
     font-size: 13px;
     margin-top: -13px;
 }
+.ps-right-side-controls {
+    line-height: 60px;
+}
+.ps-right-side-controls > div {
+    text-align: center;
+}
 
-
-
+@media screen and (min-width: 768px) {
+    .ps-right-side-controls > div {
+        text-align: right;
+    }
+    .ps-logo-area {
+        text-align: left;
+    }
+}
 
 
