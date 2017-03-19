@@ -1,9 +1,6 @@
-/**
- * Created by stefan.trajkovic on 17.3.2017..
- */
-"use strict";
+﻿"use strict";
 
-angular.module('psMenu').directive('psMenuItem', function() {
+angular.module('psMenu').directive('psMenuItem', function () {
     return {
         require: '^psMenu',
         scope: {
@@ -12,11 +9,12 @@ angular.module('psMenu').directive('psMenuItem', function() {
             route: '@'
         },
         templateUrl: 'ext-modules/psMenu/psMenuItemTemplate.html',
-        link: function(scope, el, attr, ctrl) {
+        link: function (scope, el, attr, ctrl) {
 
             scope.isActive = function () {
                 return el === ctrl.getActiveElement();
             };
+
             el.on('click', function (evt) {
                 evt.stopPropagation();
                 evt.preventDefault();

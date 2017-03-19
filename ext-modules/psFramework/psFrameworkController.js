@@ -1,8 +1,8 @@
 ﻿"use strict";
 
 angular.module("psFramework").controller("psFrameworkController",
-    ['$scope', '$rootScope', '$window', '$timeout',
-        function ($scope, $rootScope, $window, $timeout) {
+    ['$scope', '$window', '$timeout', '$rootScope',
+        function ($scope, $window, $timeout, $rootScope) {
 
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;

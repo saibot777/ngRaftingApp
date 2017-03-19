@@ -1,11 +1,14 @@
+﻿
 .ps-menu-area {
     position: relative;
     background-color: #333;
     color: #ccc;
+    padding-left: 0;
     width: 200px;
     min-height: 100vh;
     padding-top: 30px;
 }
+
 .ps-menu-area ul {
     padding-left: 0;
 }
@@ -24,10 +27,12 @@
     list-style-type: none;
     padding-left: 0;
 }
+
 .ps-menu li {
     line-height: 3em;
     cursor: pointer;
 }
+
 .ps-menu li div {
     display: inline-block;
     width: 90%;
@@ -37,9 +42,11 @@
 .ps-selectable-item:hover {
     background-color: #555;
 }
+
 .ps-menu-icon {
     margin-right: 10px;
 }
+
 .ps-menu-active-indicator {
     float: right;
     color: #ddd;
@@ -53,4 +60,15 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.ps-group-indicator-left {
+    float: right;
+    color: #ddd;
+    margin-right: 2px;
+    margin-top: 15px;
+}
+
+.ps-subitem-section {
+    padding-left: 16px;
 }

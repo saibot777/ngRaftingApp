@@ -1,7 +1,6 @@
-/**
- * Created by stefan.trajkovic on 17.3.2017..
- */
-angular.module("psMenu").controller("psMenuController",
+﻿"use strict";
+
+angular.module('psMenu').controller('psMenuController',
     ['$scope', '$rootScope',
         function ($scope, $rootScope) {
 
@@ -10,16 +9,17 @@ angular.module("psMenu").controller("psMenuController",
             this.getActiveElement = function () {
                 return $scope.activeElement;
             };
+
             this.setActiveElement = function (el) {
                 $scope.activeElement = el;
             };
 
             this.setRoute = function (route) {
                 $rootScope.$broadcast('ps-menu-item-selected-event',
-                    {route: route});
+                    { route: route });
             };
 
-            $scope.$on('ps-menu-show', function (evt, data) {
+            $scope.$on('[s-menu-show', function (evt, data) {
                 $scope.showMenu = data.show;
             });
         }
